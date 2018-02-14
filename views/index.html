@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 <head>
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-	<input type="text" class="nickname" placeholder="What is your nickname?">
+	<div id="chatBox">
+	<input type="text" class="nickname" placeholder="Type your nick name here!">
 	<ul id="messages"></ul>
 	<form>
-		<input class="message" type="text" id="m" autocomplete="off">
+		<input class="message" type="text" id="m" autocomplete="off" placeholder="Your message">
 		<button>send</button>
 	</form>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="js/main.min.js"></script>
+</div>
 </body>
+
 </html>
