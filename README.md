@@ -18,10 +18,45 @@ develop the app.
 * Use Grunt or Gulp to compile and minify your production files (SCSS -> CSS, minified
 JS file, other Grunt / Gulp based tooling like image optimization etc)
 
+
 ## Installing
+### Installing NPM
+
+```
+npm install npm@latest -g
+```
+
+### Installing grunt
+* Setup package.json
+```
+npm init
+```
+* Install Grunt CLI as global:
+```
+npm install -g grunt-cli
+```
+
+* Install Grunt in your local project:
+```
+npm install grunt --save-dev
+```
+
+### Installing sass
+```
+npm install grunt-contrib-sass --save-dev
+```
 
 ### Installing socket.io
 
 ```
 $ npm install socket.io
 ```
+
+## Test
+
+To test the application, in terminal type in
+```
+node app
+```
+
+the result will be running in localhost:3000
